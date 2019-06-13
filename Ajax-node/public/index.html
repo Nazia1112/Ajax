@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="./javascripts/script.js"> </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheets" src="./stylesheets/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <br>
+        <div id="user-form-div">
+            <h1>Ready to start the quiz - (15 MCQ - 2 mins 30 secs )</h1>
+            <form id="user-form">
+                <input type='text' required placeholder="Name" style="border-radius: 10px; background-color: antiquewhite">
+                <br>
+                <br>
+                <button class="btn btn-dark" type=submit id="start-btn"> Take the quiz </button>
+            </form>
+
+        </div>
+    </div>
+
+
+    <div id="question-div">
+
+        <div class="container">
+            <div id="timer" align="right">
+
+            </div>
+            <form>
+                <p id="question"> </p>
+                <input id="option0Input" type="radio" name="option" value="test0">
+                <span id="option0"> </span>
+                <br>
+                <input id="option1Input" type="radio" name="option" value="test1">
+                <span id="option1"> </span>
+                <br>
+                <input id="option2Input" type="radio" name="option" value="test2">
+                <span id="option2"> </span>
+                <br>
+                <input id="option3Input" type="radio" name="option" value="test3">
+                <span id="option3"> </span>
+                <br>
+                <input type="button" id="next-btn" value='next'>
+            </form>
+        </div>
+    </div>
+    <div id="myProgress">
+        <div id="myBar"></div>
+    </div>
+
+
+    <div id="result-div">
+
+    </div>
+</body>
+
+</html>
